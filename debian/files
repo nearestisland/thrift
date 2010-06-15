@@ -1,0 +1,6 @@
+thrift-compiler_0.4.0-dev.ni1_amd64.deb devel extra
+python-thrift_0.4.0-dev.ni1_amd64.deb python extra
+libthrift-ruby_0.4.0-dev.ni1_amd64.deb libs extra
+libthrift0_0.4.0-dev.ni1_amd64.deb devel extra
+libthrift-dev_0.4.0-dev.ni1_amd64.deb libdevel extra
+libthrift-java_0.4.0-dev.ni1_amd64.deb libs extra
