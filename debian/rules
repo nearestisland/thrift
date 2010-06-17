@@ -117,7 +117,7 @@ install-arch:
 		ruby setup.rb install --prefix=$(CURDIR)/debian/libthrift-ruby
 
 	#cpp
-	mkdir -p $(CURDIR)/debian/tmp; \
+	mkdir -p $(CURDIR)/debian/tmp && \
 	cd $(CURDIR)/lib/cpp && \
 		make DESTDIR=$(CURDIR)/debian/tmp install
 

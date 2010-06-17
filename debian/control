@@ -95,4 +95,3 @@ Description: Java bindings for Thrift
  tool (in the thrift-compiler package) to compile your definition to Java
  classes, and then the modules in this package will allow you to use those
  classes in your programs.
-
