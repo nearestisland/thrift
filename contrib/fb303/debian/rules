@@ -43,6 +43,7 @@ build-arch-stamp: configure-stamp
 
 	# Python library
 	cd $(CURDIR)/py && \
+	make && \
     for py in $(PYVERS); do  \
         $$py setup.py build; \
     done
