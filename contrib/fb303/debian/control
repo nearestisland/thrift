@@ -1,0 +1,51 @@
+Source: thrift
+Section: devel
+Priority: extra
+Build-Depends: debhelper (>= 5), build-essential, python-dev, ruby1.8-dev, autoconf, python-support, automake, pkg-config, libtool, ruby, openjdk-6-jdk, ant, thrift-compiler
+Maintainer: Brian McKinney <brianm@nearestisland.com>
+Standards-Version: 3.7.2
+
+Package: python-fb303
+Architecture: any
+Section: python
+Depends: ${python:Depends}, ${shlibs:Depends}, ${misc:Depends}
+Provides: ${python:Provides}
+Description: Python bindings for Thrift
+ Thrift is a software framework for scalable cross-language services
+ development. It combines a software stack with a code generation engine to
+ build services that work efficiently and seamlessly.
+ .
+ Thrift came out of Facebook and is now an Apache Software Foundation project.
+ .
+ This package contains the Python bindings for Thrift. You will need the thrift
+ tool (in the thrift-compiler package) to compile your definition to Python
+ classes, and then the modules in this package will allow you to use those
+ classes in your programs.
+
+Package: libfb303
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libthrift0
+Description: Thrift C++ library
+ Thrift is a software framework for scalable cross-language services
+ development. It combines a software stack with a code generation engine to
+ build services that work efficiently and seamlessly.
+ .
+ Thrift came out of Facebook and is now an Apache Software Foundation project.
+ .
+ This package contains the runtime libraries needed for C++ applications.
+
+Package: libfb303-java
+Architecture: any
+Section: libs
+Depends: java-common, libthrift-java
+Description: Java bindings for Thrift
+ Thrift is a software framework for scalable cross-language services
+ development. It combines a software stack with a code generation engine to
+ build services that work efficiently and seamlessly.
+ .
+ Thrift came out of Facebook and is now an Apache Software Foundation project.
+ .
+ This package contains the Java bindings for Thrift. You will need the thrift
+ tool (in the thrift-compiler package) to compile your definition to Java
+ classes, and then the modules in this package will allow you to use those
+ classes in your programs.
